@@ -39,12 +39,30 @@ bun monitor.ts --check-weekends
 
 ## Configuration
 
-The location being monitored is defined by the constants in `monitor.ts`. By default, it is configured for location ID `5020`, which refers to **BLAINE (Blaine NEXUS and FAST Enrollment Center )**.
+The script contains several configurable options at the top of `monitor.ts`.
+
+### Configurable Options
+
+| Constant | Description | Default |
+| :--- | :--- | :--- |
+| `LOCATION_ID` | The ID of the TTP enrollment center to monitor. | `5020` (Blaine) |
+| `LOCATION_URL` | Information URL for the specific enrollment center. | Blaine NEXUS/FAST |
+| `SCHEDULING_URL` | The direct URL to the TTP scheduler for convenience. | TTP Scheduler |
+
+### Grid Visualization Range
+
+You can also adjust the visualization hours by modifying the following constants inside the `main` function:
+
+| Constant | Description | Default |
+| :--- | :--- | :--- |
+| `minHour` | The start hour for the availability grid (24h format). | `8` (08:00) |
+| `maxHour` | The end hour for the availability grid (24h format). | `17` (17:00) |
 
 ```typescript
-// Configuration
+// Example Configuration in monitor.ts
 const LOCATION_ID = 5020;
-const SCHEDULING_URL = "https://ttp.dhs.gov/schedulerui/schedule-interview/location?lang=en&vo=true&returnUrl=ttp-external&service=nh";
+const minHour = 8;
+const maxHour = 17;
 ```
 
 ## Example Output
