@@ -60,5 +60,9 @@ Day        | 08 09 10 11 12 13 14 15 16 17 | Total
 20 (Sat)   |  1  2  .  .  .  .  .  .  2  . |     5
 ```
 
+## Development
+
+This entire application was programmed using Google Antigravity.
+
 ## License
 MIT
