@@ -114,7 +114,8 @@ label {
     color: var(--text-muted);
 }
 
-select, input {
+select,
+input {
     background: rgba(15, 23, 42, 0.6);
     border: 1px solid var(--border);
     color: var(--text);
@@ -125,7 +126,8 @@ select, input {
     transition: border-color 0.2s;
 }
 
-select:focus, input:focus {
+select:focus,
+input:focus {
     outline: none;
     border-color: var(--primary);
 }
@@ -232,7 +234,8 @@ select:focus, input:focus {
     font-size: 0.875rem;
 }
 
-.grid-table th, .grid-table td {
+.grid-table th,
+.grid-table td {
     padding: 0.75rem;
     text-align: center;
     border-bottom: 1px solid var(--border);
@@ -266,6 +269,32 @@ select:focus, input:focus {
     font-weight: bold;
 }
 
+.slot-dot.available.green {
+    background: var(--success);
+}
+
+.slot-dot.available.yellow {
+    background: var(--warning);
+    color: #0f172a;
+    /* Dark text for yellow bg */
+}
+
+.slot-dot.available.red {
+    background: var(--error);
+}
+
+.date-cell.green {
+    color: var(--success);
+}
+
+.date-cell.yellow {
+    color: var(--warning);
+}
+
+.date-cell.red {
+    color: var(--error);
+}
+
 .slot-dot.empty {
     opacity: 0.3;
 }
@@ -284,13 +313,16 @@ select:focus, input:focus {
 }
 
 @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @media (max-width: 900px) {
     main {
         grid-template-columns: 1fr;
     }
+
     .sidebar {
         position: static;
     }
