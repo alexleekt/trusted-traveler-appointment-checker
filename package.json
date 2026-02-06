@@ -1,0 +1,25 @@
+{
+  "name": "ttp_monitor",
+  "version": "1.0.0",
+  "description": "A lightweight TypeScript tool for checking Trusted Traveler Program (TTP) appointment availability with visual grids and weekend-only alerts.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexleekt/trusted-traveler-appointment-checker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexleekt/trusted-traveler-appointment-checker/issues"
+  },
+  "homepage": "https://github.com/alexleekt/trusted-traveler-appointment-checker#readme",
+  "devDependencies": {
+    "vite": "^7.3.1"
+  }
+}
