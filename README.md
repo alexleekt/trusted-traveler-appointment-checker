@@ -9,6 +9,13 @@ The web version provides a premium interactive interface and can be hosted on Gi
 - **Live Demo**: [https://alexleekt.github.io/trusted-traveler-appointment-checker/](https://alexleekt.github.io/trusted-traveler-appointment-checker/)
 - **Features**: Interactive location search, date/hour range selection, and a beautiful availability grid.
 
+## 💡 Why use this?
+
+- **Real-time Visualization**: See months of potential appointments in a single color-coded grid.
+- **Save Time**: Skip the tedious login/refresh cycle on the DHS portal.
+- **Filter for Your Life**: Only searching for weekend slots? Specific hours? We've got you covered.
+- **Color-Coded Urgency**: Instantly identify the soonest appointments (Green: <28 days, Yellow: <56 days).
+
 ### 🚀 Local Development (Web)
 
 ```bash
